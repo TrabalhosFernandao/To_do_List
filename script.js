@@ -16,7 +16,7 @@ function renderTodos() {
         li.className = `todo-item ${todo.completed ? 'completed' : ''}`;
         li.innerHTML = `
             <input type="checkbox" ${todo.completed ? 'checked' : ''} onchange="toggleTodo(${index})">
-            <span class="todo-text">${todo.text}</span>
+            <span class="">${todo.text}</span>
             <button class="delete-btn" onclick="deleteTodo(${index})">Excluir</button>
         `;
         if (todo.completed) {
