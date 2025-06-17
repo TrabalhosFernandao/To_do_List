@@ -39,7 +39,30 @@ h1 {
 #add-btn:hover {
     background-color: #218838;
 }
-#todo-list {
+.tab-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.tab {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.tab.active {
+    background-color: #28a745;
+    color: white;
+}
+.tab:hover {
+    background-color: #d0d0d0;
+}
+.tab.active:hover {
+    background-color: #218838;
+}
+.todo-list {
     list-style: none;
     padding: 0;
     margin: 0;

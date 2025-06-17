@@ -13,7 +13,12 @@
             <input type="text" id="todo-input" placeholder="Adicione uma tarefa...">
             <button id="add-btn">Adicionar</button>
         </div>
-        <ul id="todo-list"></ul>
+        <div class="tab-section">
+            <button class="tab active" onclick="showTab('pending')">Tarefas</button>
+            <button class="tab" onclick="showTab('completed')">Concluidas</button>
+        </div>
+        <ul id="todo-list-pending" class="todo-list"></ul>
+        <ul id="todo-list-completed" class="todo-list" style="display: none;"></ul>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
