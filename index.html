@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarefas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Quiz do fernando</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Tarefas</h1>
-    <div class="todo-container">
-        <div class="input-section">
-            <input type="text" id="todo-input" placeholder="Adicione uma tarefa...">
-            <button id="add-btn">Adicionar</button>
+    <div class="quiz-container">
+        <div id="quiz">
+            
+            <div class="pergunta-container">
+                <h2 id="pergunta">Pergunta </h2>
+                <ul>
+                    <li><button class="botao-resposta">Resposta 1</button></li>
+                    <li><button class="botao-resposta">Resposta 2</button></li>
+                    <li><button class="botao-resposta">Resposta 3</button></li>
+                    <li><button class="botao-resposta">Resposta 4</button></li>
+                </ul>
+            </div>
+            <button id="botao-proximo" class="botao" style="display: none;">Próxima Pergunta</button>
+            <div id="resultado" style="display: none;">
+                <h2>Seu resultado: <span id="pontuacao"></span></h2>
+            </div>
+            
         </div>
-        <div class="tab-section">
-            <button class="tab active" onclick="showTab('pending')">Tarefas</button>
-            <button class="tab" onclick="showTab('completed')">Concluidas</button>
-        </div>
-        <ul id="todo-list-pending" class="todo-list"></ul>
-        <ul id="todo-list-completed" class="todo-list" style="display: none;"></ul>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
